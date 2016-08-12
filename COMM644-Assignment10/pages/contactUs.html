@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <!-- 3 things you need: link to jqm css, link to jQuery and link to jqm core files -->
+        <link rel="stylesheet" href="themes/Assignment10Theme.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <!-- shortcut for meta tag is (with emmet) "meta:vp{press ctrl+alt+enter or possibly tab} -->
+        <meta name="viewport" content="width=device-width">
+    </head>
+    
+    <body>
+<!-- 1st page -->
+        <section id="firstPage" data-role="page">
+        <header data-role="header" data-position="fixed" data-tap-toggle="false">
+            <h1>Vecta Corporation</h1>
+        </header>
+            <nav data-role="navbar">
+                <ul id="menu">
+                    <li><a href="../index.html" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+                    <li><a href="solutions.html" class="ui-btn ui-icon-star ui-btn-icon-top">Solutions</a></li>
+                    <li><a href="contactUs.html" class="ui-btn ui-icon-grid ui-btn-icon-top ui-btn-active ui-state-persist">Contact</a></li>
+                </ul>
+            <article class="ui-content">
+                <form method="get" action="">
+
+                    <label for="userName">Your Name:</label>
+                    <input type="text" name="userName" id="userName" value="" placeholder="Your Name" />
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" value="" placeholder="Your Email Address" /> 
+                    
+                    <div class="ui-field-contain">
+                      <label for="select-choice-1" class="select">Your State:</label>
+                      <select name="select-choice-1" id="select-choice-1">
+                        <option value="standard">California</option>
+                        <option value="rush">Hawaii</option>
+                        <option value="express">Florida</option>
+                        <option value="overnight">I live in a non-beachy state</option>
+                      </select>
+                    </div>
+
+                    <div class="ui-field-contain">
+                        <label for="questions">Questions/Comments?</label><br/>
+                        <textarea id="questions"></textarea>
+                    </div>
+                    <a href="#" class="ui-btn ui-shadow">Submit</a>
+                </form>
+            </article>
+        <footer data-role="footer" data-position="fixed" data-tap-toggle="false">
+            <h2>Vecta Corporation 2016</h2>
+        </footer>
+       </section>
+       
+
+        
+    </body>
+</html>
+
+
+
+
+
+
